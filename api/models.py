@@ -10,3 +10,11 @@ class TransientModel(models.Model):
 
 class ThirdPartyAPI(TransientModel):
     origin = TransientModel.TextField("Origin")
+    origins = TransientModel.TextField("Origins")
+    destination = TransientModel.TextField("destination")
+    destinations = TransientModel.TextField("destinations")
+    
+    q = TransientModel.TextField("q")
+    gl = TransientModel.TextField("gl")
+    hl = TransientModel.TextField("hl")
+    autocorrect = TransientModel.Boolean("autocorrect")
